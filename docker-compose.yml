@@ -7,8 +7,10 @@ services:
     ports:
       - "3000:3000"  # 로컬 포트와 컨테이너 포트 매핑
     volumes:
-      - .:/app  # 로컬 코드와 컨테이너 코드 동기화
+      - .:/app
+      - /app/node_modules # 로컬 코드와 컨테이너 코드 동기화
     environment:
       - NODE_ENV=development
+      - HOST=0.0.0.0
     working_dir: /app
     tty: true  # 터미널 세션을 유지하여 로그 확인

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./styles.css";
-
+import "./style.css";
 const content = [
   [
     "React is extremely popular",

@@ -1,0 +1,29 @@
+<!-- public/test.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vanilla JS Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Page for Vanilla JavaScript</h1>
+  <p id="result">결과가 여기에 표시됩니다.</p>
+  <button onclick="sayHello()">버튼 클릭</button>
+
+  <script>
+    function sayHello() {
+      document.getElementById('result').textContent = '✅ 바닐라 JS 잘 작동합니다!';
+    }
+  </script>
+</body>
+</html>
